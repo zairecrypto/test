@@ -1,1 +1,2 @@
-<a href="./<%= @file %>" download> <i class="material-icons">cloud_download</i> </a>                  
+<a href="./<%= @file %>" download> download file here </a> <br />
+<%= link "download instead here", to: "./image/phoenix.png" %>                  
