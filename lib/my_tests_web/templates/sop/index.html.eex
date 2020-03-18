@@ -1,0 +1,16 @@
+<%= form_for @changeset, sop_path(@conn, :create), [multipart: true], fn f -> %>
+    
+    <div class="" >
+        <%= file_input f, :file, class: ""  %>
+        <%= error_tag f, :file %>
+    </div>
+    
+    <hr />
+
+    <div class="form-group">
+        <%= submit "Save SOP", class: "btn btn-primary" %>
+    </div>
+<% end %>
+
+
+<a href="<%= static_path(@conn, "/uploads/t.docx") %>" download> downloadhere </a>

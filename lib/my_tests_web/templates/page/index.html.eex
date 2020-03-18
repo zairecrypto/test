@@ -1,2 +1,2 @@
-<a href="./<%= @file %>" download> download file here </a> <br />
-<%= link "download instead here", to: "./image/phoenix.png" %>                  
+
+<a href="<%= static_path(@conn, "/images/sop__1582739481079_.docx") %>">download file here </a> <br />

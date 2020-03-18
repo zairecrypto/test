@@ -39,6 +39,8 @@ defmodule MyTestsWeb.Endpoint do
 
   plug MyTestsWeb.Router
 
+  plug Plug.Static, at: "/uploads", from: "/media"
+
   @doc """
   Callback invoked for dynamically configuring the endpoint.
 
