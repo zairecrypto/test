@@ -12,5 +12,10 @@
     </div>
 <% end %>
 
-
-<a href="<%= static_path(@conn, "/uploads/t.docx") %>" download> downloadhere </a>
+<ol class="collection">
+    <%= for sop <- @sops do %>
+        <li class="collection-item">            
+            <a href="<%= static_path(@conn, "#{sop.file_title}") %>" >  <%= sop.file_title %></a> 
+        </li>
+    <% end %>
+</ol>

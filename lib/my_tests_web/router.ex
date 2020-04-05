@@ -18,6 +18,10 @@ defmodule MyTestsWeb.Router do
 
     get "/", PageController, :index
     resources "/sop", SopController
+    resources "/signup", UserController, only: [:create, :new]
+    get "/sign-in", SessionController, :new
+    post "/sign-in", SessionController, :create
+    delete "/sign-out", SessionController, :delete
   end
 
   # Other scopes may use custom stacks.

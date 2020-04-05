@@ -3,14 +3,14 @@ defmodule MyTests.Sop do
   import Ecto.Changeset
 
   schema "sops" do
-    field :title, :string, null: false
+    field :file_title, :string, null: false
 
     timestamps()
   end
 
   def changeset(sop, params \\ %{}) do
     sop
-    |> cast(params, [:title])
-    |> validate_required([:title])
+    |> cast(params, [:file_title])
+    |> validate_required([:file_title])
   end
 end

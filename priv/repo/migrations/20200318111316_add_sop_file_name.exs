@@ -3,7 +3,7 @@ defmodule MyTests.Repo.Migrations.AddSopFileName do
 
   def change do
     create table(:sops) do
-      add :title, :string
+      add :file_title, :string
 
       timestamps()
     end

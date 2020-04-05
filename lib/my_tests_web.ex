@@ -40,6 +40,7 @@ defmodule MyTestsWeb do
       import MyTestsWeb.Router.Helpers
       import MyTestsWeb.ErrorHelpers
       import MyTestsWeb.Gettext
+      import MyTestsWeb.Helpers.Auth, only: [signed_in?: 1]
     end
   end
 
